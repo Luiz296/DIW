@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+
+body *{
+    border: 1px solid rebeccapurple;
+    font-family: "Roboto Serif", serif, arial;
+}
+
+
+header a{
+    text-decoration: none;
+    color:black;
+}
+
+header{
+    font-family: "Roboto Serif", serif, arial;
+    text-decoration:none;
+    padding: 20px;
+}
+
+header h1{
+    font-size: 30px;
+}
+
+.linha{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    align-content: center;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
