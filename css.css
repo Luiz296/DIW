@@ -94,6 +94,9 @@ main h3 {
     gap: 10px;
 }
 
+.imagem img{
+    border-radius: 20px;
+}
 /*Footer*/
 footer {
     display: flex;
