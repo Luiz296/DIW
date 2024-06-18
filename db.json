@@ -1,0 +1,20 @@
+{
+    "repols": [
+        {
+            "titulo": "DIW",
+            "descricao": "Repositório criado para guardar todos os projetos feitos na disciplina de Desenvolvimento de Interfaces Web. Open Source.",
+            "imagem": "https://i.pinimg.com/564x/66/71/3a/66713a96b9b21dffd3a85a5d748a3171.jpg"
+        },
+        {
+            "titulo": "PC Match",
+            "descricao": "Repositório contendo todo o projeto PC Match da discilina de Trabalho Interdiciplinar e Aplicações Web. Open Source.",
+            "imagem": "https://i.pinimg.com/736x/31/43/b3/3143b3e9b416335aac6ff7424dfe6cf9.jpg"
+        },
+        {
+            "titulo": "CRUD",
+            "descricao": "Repositório contendo procedimentos de Create, Read, Update and Delete em JavaScript. Open Source",
+            "imagem": "https://i.pinimg.com/564x/e0/2f/1c/e02f1c3d8d6cc659d317fe855d71b93a.jpg"
+        }
+    ]
+}
+
