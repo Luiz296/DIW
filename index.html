@@ -15,19 +15,16 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Meu site</title>
 </head>
-
 <body>
   <header>
-
-
     <div class="cabeca">
       <div class="meunome">
-        <h1 class="bg-dark-subtle p-2 rounded-4"><a href="#">LUIZ FERNANDO</a></h1>
+        <a href="index.html"><h1 class="bg-dark-subtle p-2 rounded-4" id="name"></h1></a>
       </div>
       <div class="linha">
-        <h1><a href="#">SEÇÃO 1</a></h1>
-        <h1><a href="#">SEÇÃO 2</a></h1>
-        <h1><a href="#">SEÇÃO 3</a></h1>
+        <h1><a href="index2.html">SEÇÃO 1</a></h1>
+        <h1><a href="index3.html">SEÇÃO 2</a></h1>
+        <h1><a href="index4.html">SEÇÃO 3</a></h1>
       </div>
     </div>
   </header>
@@ -37,42 +34,31 @@
     <h3>Perfil</h3>
     <div class="flex-container">
       <div class="tudo">
-        <div class="imagem">
-          <img src="Imagens/Perfil.png">
+        <div class="imagem" id="avatar">
         </div>
 
         <div class="Sobremim">
-          <h5 class="card-title">Luiz Fernando Versiani de Melo Penna</h5>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam quasi animi reprehenderit rem! Velit
-            nostrum fugiat repellat voluptate, delectus earum sint, at error ex voluptatum, temporibus facilis quos
-            itaque.
-            content. This content is a little bit longer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            culpa ipsum aliquid repdasdsantium similique dolores, vel architecto. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptas repellendus dolorem harum laudantium! Quidem consequuntur impedit maxime itaque
-            expedita veritatis sit officiis. Illo dignissimos officiis consequuntur molestias voluptates officia earum?
-          </p>
+          <h5 class="card-title" id="name1"></h5>
+          <p class="card-text" id="bio"></p>
           <div class="redes"><a href="https://www.instagram.com/luiz296/"><i
                 class="fa-brands fa-instagram  text-decoration-none"></i></a>
             <a
               href="https://www.linkedin.com/in/luiz-fernando-penna-4807652ba?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
                 class="fa-brands fa-linkedin-in text-decoration-none"></i></a>
           </div>
-          <p class="card-text"><small class="text-muted">Localidade: Contagem, MG, Brasil. <br> Telefone de contato:
-              (31) 99780-2409.</small></p>
+          <p class="card-text"><small class="text-muted" id="loc"></small></p>
         </div>
       </div>
 
     </div>
-    <h3>Repositórios (3)</h3>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <h3 id="numrepol"></h3>
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="reposContainer">
       <div class="col">
         <div class="card">
-          <a href="index2.html" target="_blank"><img src="Imagens/Git Hub.png" class="card-img-top" alt="Git Hub"></a>
+          <a href="index2.html" target="_blank"><img class="card-img-top" alt="Git Hub" id ="DIW_imagem"></a>
           <div class="card-body">
-            <h5 class="card-title alightext">DIW</h5>
-            <p class="card-text">Repositório criado para guardar todos os projetos feitos na disciplina de
-              Desenvolvimento de Interfaces Web. Open Source.</p>
+            <h5 class="card-title alightext" id ="DIW"></h5>
+            <p class="card-text" id ="DIW_descricao"></p>
               <i class="fa-regular fa-star"> 0</i>
               <i class="fa-regular fa-user col-"> 1</i>
               <i class="fa-solid fa-code-fork"> 1</i>
@@ -81,12 +67,11 @@
       </div>
       <div class="col">
         <div class="card">
-          <a href="index3.html" target="_blank"><img src="Imagens/logoft.png" class="card-img-top" alt="PC MATCH"></a>
+          <a href="index3.html" target="_blank"><img class="card-img-top" alt="PC MATCH" id="PC_imagem"></a>
           <div class="card-body">
-            <h5 class="card-title">PC Match</h5>
-            <p class="card-text">Repositório contendo todo o projeto PC Match da discilina de Trabalho Interdiciplinar e
-              Aplicações Web. Open Source.</p>
-              <i class="fa-regular fa-star"> 2</i>
+            <h5 class="card-title" id = "PC"></h5>
+            <p class="card-text" id="PC_descricao"></p>
+              <i class="fa-regular fa-star"> 2</i>      
               <i class="fa-regular fa-user col-"> 1</i>
               <i class="fa-solid fa-code-fork"> 7</i>
           </div>
@@ -94,15 +79,13 @@
       </div>
       <div class="col">
         <div class="card">
-          <a href="index4.html" target="_blank"><img src="Imagens/Teste.png" class="card-img-top" alt="Teste"></a>
+          <a href="index4.html" target="_blank"><img class="card-img-top" alt="Teste" id = "CRUD_imagem"></a>
           <div class="card-body">
-            <h5 class="card-title">Teste</h5>
-            <p class="card-text">Repositório de testes. Open Source</p>
+            <h5 class="card-title" id="CRUD"></h5>
+            <p class="card-text" id="CRUD_descricao"></p>
             <i class="fa-regular fa-star"> 0</i>
               <i class="fa-regular fa-user col-"> 0</i>
               <i class="fa-solid fa-code-fork"> 0</i>
-
-              
           </div>
         </div>
       </div>
@@ -125,27 +108,27 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="Imagens/programação.jpg" class="d-block w-100" alt="Programação">
+          <img src="Imagens/programação.jpg" class="d-block w-100px h-50px" alt="Programação">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Imagens/squad.jpg" class="d-block w-100" alt="Hobby">
+          <img src="Imagens/squad.jpg" class="d-block w-100px h-50px" alt="Hobby">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Imagens/familia.png" class="d-block w-100" alt="Familia">
+          <img src="Imagens/familia.png" class="d-block w-100 h-100" alt="Familia">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Imagens/rock.png" class="d-block w-100" alt="Musica">
+          <img src="Imagens/rock.png" class="d-block w-100 h-100" alt="Musica">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
         <div class="carousel-item">
-          <img src="Imagens/direito.png" class="d-block w-100" alt="Formacao">
+          <img src="Imagens/direito.png" class="d-block w-100 h-100" alt="Formacao">
           <div class="carousel-caption d-none d-md-block">
           </div>
         </div>
@@ -188,6 +171,7 @@
   <footer>
     <p>&reg; Desenvolvido por Luiz Fernando Versiani de Melo Penna - 12 de abril de 2024</p>
   </footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
