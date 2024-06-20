@@ -15,6 +15,29 @@
             "descricao": "Repositório contendo procedimentos de Create, Read, Update and Delete em JavaScript. Open Source",
             "imagem": "https://i.pinimg.com/564x/e0/2f/1c/e02f1c3d8d6cc659d317fe855d71b93a.jpg"
         }
+    ],
+
+    "carrocel": [
+        {
+            "categoria": "programacao",
+            "img": "https://i.pinimg.com/564x/fc/73/0c/fc730cf040552a5c6892f6743163e6a8.jpg"
+        },
+        {
+            "categoria": "games",
+            "img": "https://i.pinimg.com/564x/90/4b/c8/904bc8d36618ad4ec6a94da00d09ee11.jpg"
+        },
+        {
+            "categoria": "familia",
+            "img": "https://i.pinimg.com/564x/4b/c3/42/4bc342ade5b144979602bb740626d4de.jpg"
+        },
+        {
+            "categoria": "musica",
+            "img": "https://i.pinimg.com/564x/f0/60/c6/f060c684dfe667e99a6bc6801855dc72.jpg"
+        },
+        {
+            "categoria": "formacao",
+            "img": "https://i.pinimg.com/564x/44/c1/fa/44c1fa04aed5cad2918a427ad0ed01a4.jpg"
+        }
     ]
 }
 

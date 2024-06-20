@@ -13,39 +13,40 @@ fetch('https://api.github.com/users/luiz296')
 
 
 //Repositórios JSON
-const urlRepositorios = 'http://localhost:3000/repols'; // Ajustar URL ao fazer deploy para o Vercel
-let repositorio = [];
+const urlBase = 'http://localhost:3000/'; // Ajustar URL ao fazer deploy para o Vercel
 
-fetch(urlRepositorios)
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(dados) {
-    repositorio = dados;
-    console.log('Dados carregados!');
+// Função para carregar dados dos repositórios
+function carregarRepositorios() {
+  fetch(`${urlBase}repols`)
+    .then(response => response.json())
+    .then(dados => {
+      const repositorio = dados;
+      console.log('Dados carregados!');
 
-    repositorio.forEach(function(repo) {
-      if (repo.titulo === "DIW") {
-        document.getElementById('DIW').textContent = repo.titulo;
-        document.getElementById('DIW_descricao').textContent = repo.descricao;
-        document.getElementById('DIW_imagem').src = repo.imagem;
-      } else if (repo.titulo === "PC Match") {
-        document.getElementById('PC').textContent = repo.titulo;
-        document.getElementById('PC_descricao').textContent = repo.descricao;
-        document.getElementById('PC_imagem').src = repo.imagem;
-      } else if (repo.titulo === "CRUD") {
-        document.getElementById('CRUD').textContent = repo.titulo;
-        document.getElementById('CRUD_descricao').textContent = repo.descricao;
-        document.getElementById('CRUD_imagem').src = repo.imagem;
-      }
-    });
-  })
-  .catch(function(error) {
-    console.error('Erro ao carregar dados:', error);
-  });
+      repositorio.forEach(repo => {
+        if (repo.titulo === "DIW") {
+          document.getElementById('DIW').textContent = repo.titulo;
+          document.getElementById('DIW_descricao').textContent = repo.descricao;
+          document.getElementById('DIW_imagem').src = repo.imagem;
+        } else if (repo.titulo === "PC Match") {
+          document.getElementById('PC').textContent = repo.titulo;
+          document.getElementById('PC_descricao').textContent = repo.descricao;
+          document.getElementById('PC_imagem').src = repo.imagem;
+        } else if (repo.titulo === "CRUD") {
+          document.getElementById('CRUD').textContent = repo.titulo;
+          document.getElementById('CRUD_descricao').textContent = repo.descricao;
+          document.getElementById('CRUD_imagem').src = repo.imagem;
+        }
+      });
+    })
+    .catch(error => console.error('Erro ao carregar dados:', error));
+}
 
-  
- 
+
+// Carregar dados ao iniciar a página
+carregarRepositorios();
+
+
 
   
 
