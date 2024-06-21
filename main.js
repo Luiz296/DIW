@@ -1,4 +1,4 @@
-//API GitHub
+//Acessa e exibe dados -- API GitHub
 fetch('https://api.github.com/users/luiz296')
   .then(res => res.json())
   .then(data => {
@@ -12,8 +12,8 @@ fetch('https://api.github.com/users/luiz296')
   .catch(error => console.error('Erro:', error));
 
 
-//Repositórios JSON
-const urlBase = 'https://back-end-diw-gules.vercel.app/'; // Ajustar URL ao fazer deploy para o Vercel
+//JSON server rodando no Vercel - Acesse com CTRL + click
+const urlBase = 'https://back-end-diw-gules.vercel.app/'; 
 
 // Função para carregar dados dos repositórios
 function carregarRepositorios() {
@@ -46,7 +46,7 @@ function carregarRepositorios() {
         document.getElementById('reposContainer').innerHTML = imprime;
       });
 }
-
+//Função para carregar Carrocel
 function carregarCarrocel(){
   fetch(`${urlBase}carrocel`)
   .then(response => response.json())
@@ -111,7 +111,7 @@ function carregarCarrocel(){
     document.getElementById('tudo').innerHTML = imprime;
   })
 }
-
+//Função para carregar colegas
 function carregaColegas (){
   fetch(`${urlBase}colegas`)
   .then(response => response.json())
@@ -134,7 +134,7 @@ function carregaColegas (){
     document.getElementById("all").innerHTML = imprime;
   })
 }
-
+//Funções para scrollar a tela quando clicar nas seções
 function scrollToSection() {
   var section = document.getElementById("numrepol");
   section.scrollIntoView({ behavior: "smooth" });

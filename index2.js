@@ -1,18 +1,21 @@
-const urlBase = 'https://back-end-diw-gules.vercel.app/repols'; // Ajustar URL ao fazer deploy para o Vercel
+//JSON server rodando no Vercel - Acesse com CTRL + click
+const urlBase = 'https://back-end-diw-gules.vercel.app/repols';
 
+//Função que carrga dados do JSON 
 function leDadosCards() {
     return fetch(urlBase)
         .then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not ok ' + response.statusText);
+                throw new Error('Resposta da rede não está ok' + response.statusText);
             }
             return response.json();
         })
         .catch(error => {
-            console.error('There has been a problem with your fetch operation:', error);
+            console.error('Existe um problema na operação Fetch:', error);
         });
 }
 
+//Função que carrega apenas um repositório pelo ID
 function carregarReposito(){
     leDadosCards().then(repols =>{
         let imprime = '';
@@ -53,6 +56,7 @@ function carregarReposito(){
     })
 }
 
+//Carrega as funções quando a página for carregada
 window.onload = function (){
     carregarReposito();
 }
